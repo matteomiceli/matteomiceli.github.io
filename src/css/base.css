@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Monaco', monospace;
+    src: url('/System/Library/Fonts/Monaco.dfont');
+}
+
 body {
     background-color: black;
     color: white;
+    font-family: 'Monaco';
+}
+
+.border-r-1 {
+    border-right: solid 1px white;
 }
