@@ -7,6 +7,7 @@ export default function Index() {
     <div className="">
       <Navbar />
       <SectionBlock>
+        <h1 className="font-header">Ubuntu</h1>
         asdlkjlkjljklj
       </SectionBlock>
       
