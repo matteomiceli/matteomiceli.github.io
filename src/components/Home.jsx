@@ -14,7 +14,10 @@ export default function Home({ mouseMove }) {
                 >
                     Hi, I'm Matteo
                 </h1>
-                <h2 className="text-2xl w-96 text-gray-300">Full Stack Web Developer</h2>
+                <div className="flex subtitle">
+                    <h2 className="text-2xl text-gray-300">Full Stack Web Developer</h2>
+                    <div className="blinker"></div>
+                </div>
             </div>
 
         </div>

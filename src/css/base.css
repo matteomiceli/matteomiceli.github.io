@@ -19,6 +19,18 @@ body {
     font-family: 'Monaco';
 }
 
+.subtitle{
+  width: 480px;
+}
+
+.blinker {
+  height: 32px;
+  width: 12px;
+  background-color: white;
+  margin: 2px 5px;
+  animation: cursor 1.2s step-start infinite;
+}
+
 .border-r-1 {
     border-right: solid 1px lightgrey;
 }   
@@ -120,4 +132,9 @@ body {
       top: 50%;
       left: 50%;
     }
+  }
+
+  @keyframes cursor {
+    from, to { background-color: transparent }
+    50% { background: white; }
   }
