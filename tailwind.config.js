@@ -12,6 +12,7 @@ module.exports = {
                 "neon-blue": "#00C4D0",
                 "dark-blue": "#00838B",
                 "dark-pink": "#DB0079",
+                "dark-pink-hover": "#f50087"
             },
         },
     },

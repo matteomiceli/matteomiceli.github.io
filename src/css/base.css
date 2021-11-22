@@ -49,13 +49,13 @@ body {
     top: 49.75%;
     left: 49.75%;
     color: #00C4D0;
-    animation: distort1 500ms linear infinite;
+    animation: distort1 400ms linear infinite;
   }
   .glitch:after {
     top: 50.25%;
     left: 50.25%;
     color: #EE69B2;
-    animation: distort2 500ms linear infinite;
+    animation: distort2 400ms linear infinite;
   }
   @keyframes distort1 {
     0% {
