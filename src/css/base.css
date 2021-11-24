@@ -34,6 +34,9 @@ body {
 .border-r-1 {
     border-right: solid 1px lightgrey;
 }   
+.border-1 {
+  border: 1px solid transparent;
+}
 
 .glitch{
   height: 73px;
