@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <div className="h-screen w-full">
             <h2 className="text-white text-3xl font-header font-bold">
-                > Projects
+                {">"} Projects
             </h2>
             {projectList.map((proj, i) => {
                 return (
