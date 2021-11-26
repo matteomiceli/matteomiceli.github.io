@@ -27,11 +27,10 @@ export default function Index() {
             <SectionBlock>
                 <Projects />
             </SectionBlock>
-            {projectList.map((project) => {
+            {projectList.map((project, i) => {
                 return (
                     <SectionBlock>
-                        <div>orange</div>
-                        <Project project={project} />
+                        <Project project={project} i={i} />
                     </SectionBlock>
                 );
             })}
