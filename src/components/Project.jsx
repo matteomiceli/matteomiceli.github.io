@@ -13,7 +13,7 @@ export default function Project({ project, i }) {
                     </p>
                     <p className="ml-4 mt-8">{project.longDescription}</p>
                     <div className="ml-4 mt-24 buttons flex">
-                        <a href={project.links.website}>
+                        <a target="_blank" href={project.links.website}>
                             <button className="flex justify-center w-32 bg-dark-pink p-2 border-2 border-dark-pink hover:bg-dark-pink-hover hover:border-dark-pink-hover rounded transition-all duration-200">
                                 <img
                                     className="w-4 mr-2"
@@ -23,7 +23,7 @@ export default function Project({ project, i }) {
                                 Live Site
                             </button>
                         </a>
-                        <a href={project.links.github}>
+                        <a target="_blank" href={project.links.github}>
                             <button className="flex justify-center ml-8 w-32 border-2 border-white p-2 rounded hover:border-gray-300 hover:text-gray-300 transition-all duration-200">
                                 <img
                                     className="w-4 mr-2"
@@ -36,10 +36,10 @@ export default function Project({ project, i }) {
                     </div>
                 </div>
                 <div className="flex flex-col w-1/2 items-center">
-                    <a className="mt-2 flex justify-center" href={project.links.website}>
+                    <a className="mt-2 flex justify-center" target="_blank" href={project.links.website}>
                         <img className="w-4/5 rounded-lg" src={project.imgPath} alt="" />
                     </a>
-                    <div className="stack flex w-5/6 justify-around">
+                    <div className="stack flex w-4/6 justify-around">
                         {project.techStack.map((item) => {
                             return <img className="mt-8 w-8" src={`/icons/${item}.svg`} alt="" />
                         })}
