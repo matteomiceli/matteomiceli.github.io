@@ -51,7 +51,7 @@ export default function Project({ project, i }) {
                 </div>
             </div>
             <div className="flex justify-center mt-44">
-                <p>Back to <a className="text-neon-blue hover:underline" href="#projects">projects</a></p>
+                <p>Back to <a className="text-neon-pink hover:underline" href="#projects">projects</a></p>
             </div>
         </div>
     );
