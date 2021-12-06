@@ -7,6 +7,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Project from "../components/Project";
 import projectList from "../content/projects";
+import Footer from "../components/Footer";
 
 export default function Index() {
     const [mouseMove, setMouseMove] = useState(false);
@@ -34,7 +35,7 @@ export default function Index() {
                     </SectionBlock>
                 );
             })}
-            ``
+            <Footer />
         </div>
     );
 }

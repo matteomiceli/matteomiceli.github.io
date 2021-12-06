@@ -90,8 +90,9 @@ const projectList = [
     {
         name: 'Nammos',
         description: 'Website for a local restaurant.',
-        role: '',
-        longDescription: '',
+        type: 'Freelance Work',
+        role: 'Frontend Developer',
+        longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
             website: 'https://nammos.ca/',
             github: 'https://github.com/matteomiceli/nammos'
