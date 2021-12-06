@@ -8,6 +8,10 @@ export default function Project({ project, i }) {
                 <div className="mt-10 w-1/2 text-sm">
                     <div className="absolute w-px bg-neon-blue h-3/6"></div>
                     <p className="ml-4 mt-4">
+                        <span className="text-neon-blue">Type: </span>
+                        {project.type}
+                    </p>
+                    <p className="ml-4 mt-4">
                         <span className="text-neon-blue">Role: </span>
                         {project.role}
                     </p>
@@ -36,15 +40,18 @@ export default function Project({ project, i }) {
                     </div>
                 </div>
                 <div className="flex flex-col w-1/2 items-center">
-                    <a className="mt-2 flex justify-center" target="_blank" href={project.links.website}>
-                        <img className="w-4/5 rounded-lg" src={project.imgPath} alt="" />
+                    <a className="mt-2 flex justify w-4/5" target="_blank" href={project.links.website}>
+                        <img className="w-full rounded-lg" src={project.imgPath} alt="" />
                     </a>
-                    <div className="stack flex w-4/6 justify-around">
+                    <div className="stack flex justify-center">
                         {project.techStack.map((item) => {
-                            return <img className="mt-8 w-8" src={`/icons/${item}.svg`} alt="" />
+                            return <img className="mt-8 w-8 mx-4" src={`/icons/${item}.svg`} alt="" />
                         })}
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center mt-44">
+                <p>Back to <a className="text-neon-blue hover:underline" href="#projects">projects</a></p>
             </div>
         </div>
     );

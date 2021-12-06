@@ -2,6 +2,7 @@ const projectList = [
     {
         name: 'Runik',
         description: 'Generate custom e-reader dictionaries for your favourite fictional worlds.',
+        type: 'Interdisciplinary Project',
         role: 'Project Lead, Full Stack Web Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
@@ -21,50 +22,70 @@ const projectList = [
     {
         name: 'Int-house',
         description: 'Compete against your friends in custom in house e-sports leagues.',
-        role: '',
-        longDescription: '',
+        type: 'Personal Project',
+        role: 'Full Stack Web Developer',
+        longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
-            website: '',
-            github: ''
+            website: 'https://int-house.herokuapp.com/',
+            github: 'https://github.com/matteomiceli/inhouse_O_clock'
         },
-        imgPath: '',
-        techStack: []
+        imgPath: '/images/inthouse.png',
+        techStack: [
+            'nodedotjs',
+            'tailwindcss',
+            'express',
+            'mongodb'
+        ]
     },
     {
         name: 'TEDxSFU',
         description: 'Website for the 2021 TEDxSFU conference.',
-        role: '',
-        longDescription: '',
+        type: 'Volunteer Project',
+        role: 'Frontend Developer',
+        longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
-            website: '',
-            github: ''
+            website: 'https://tedxsfu.com/',
+            github: 'https://github.com/matteomiceli/tedxsfu'
         },
-        imgPath: '',
-        techStack: []
+        imgPath: '/images/tedx.png',
+        techStack: [
+            'gatsby',
+            'tailwindcss',
+        ]
     },
     {
         name: 'VXP',
         description: "Website for Canada's first design-focused hackathon.",
-        role: '',
-        longDescription: '',
+        type: 'Volunteer Project',
+        role: 'Frontend Developer',
+        longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
-            website: '',
-            github: ''
+            website: 'https://www.vxpdesign.ca/',
+            github: 'https://github.com/VentureXPerience/vxp-server'
         },
-        imgPath: '',
-        techStack: []
+        imgPath: '/images/vxp.png',
+        techStack: [
+            'nextdotjs',
+            'tailwindcss'
+        ]
     },
     {
         name: 'Craigslist Redesign',
         description: 'Browse through a registry of items for sale and post your own ads.',
-        role: '',
-        longDescription: '',
+        type: 'Interdisciplinary Project',
+        role: 'Full Stack Web Developer',
+        longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
-            website: '',
-            github: ''
+            website: 'https://idsp2380-craigslist.herokuapp.com/',
+            github: 'https://github.com/khs6226/craigslist_redesign'
         },
-        imgPath: '',
-        techStack: []
+        imgPath: '/images/craigslist.png',
+        techStack: [
+            'nodedotjs',
+            'sass',
+            'express',
+            'mysql'
+        ]
     },
     {
         name: 'Nammos',
@@ -72,11 +93,15 @@ const projectList = [
         role: '',
         longDescription: '',
         links: {
-            website: '',
-            github: ''
+            website: 'https://nammos.ca/',
+            github: 'https://github.com/matteomiceli/nammos'
         },
-        imgPath: '',
-        techStack: []
+        imgPath: '/images/nammos.png',
+        techStack: [
+            'jquery',
+            'html5',
+            'css3'
+        ]
     }
 
 ]
