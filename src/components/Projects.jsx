@@ -8,7 +8,7 @@ export default function Projects() {
                 id="projects"
                 className="text-white text-3xl font-header font-bold pt-8"
             >
-                {">"} Projects
+                {">"} projects
             </h2>
             <div className="mt-28 flex flex-wrap justify-around">
                 {projectList.map((proj, i) => {

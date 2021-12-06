@@ -11,7 +11,7 @@ export default function About() {
         <div className="pt-8 ml-12 mb-28 h-screen" id="about">
             <div className="w-5/6 mx-auto">
                 <h2 className="text-white text-3xl font-header font-bold">
-                    {">"} About
+                    {">"} about
                 </h2>
                 <div className="mt-36 grid grid-cols-2 gap-72">
                     <div>
