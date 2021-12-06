@@ -1,11 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Home({ mouseMove }) {
+    const [lol, setLol] = useState();
+
+    function triggerLol() {
+        setLol('lol 😂')
+        setTimeout(() => {
+            setLol()
+        }, 2000);
+        
+    }
+
     return (
         <div
             id="home"
             className="flex flex-col justify-center items-center w-full"
         >
+            <div onClick={() => triggerLol()} className="absolute top-12 right-12 cursor-pointer w-20">
+                <img src="/icons/sun.svg" alt="light mode" />
+                <p className="absolute text-white">{lol}</p>
+            </div>
             <div>
                 <h1
                     className={`absolute top-1/3  align-middle whitespace-nowrap font-header text-7xl font-bold ${
