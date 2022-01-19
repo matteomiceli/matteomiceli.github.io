@@ -15,9 +15,8 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    background-color: black;
     color: white;
-    font-family: 'Monaco';
+    font-family: 'Nunito', 'sans-serif';
 }
 
 .subtitle{
@@ -32,9 +31,6 @@ body {
   animation: cursor 1.2s step-start infinite;
 }
 
-.border-r-1 {
-    border-right: solid 1px lightgrey;
-}   
 .border-1 {
   border: 1px solid transparent;
 }

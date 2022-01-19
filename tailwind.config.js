@@ -12,11 +12,10 @@ module.exports = {
                 "neon-pink": "#EE69B2",
                 "neon-blue": "#00C4D0",
                 "dark-blue": "#00838B",
-                "dark-pink": "#DB0079",
                 "dark-pink-hover": "#f50087",
 
                 // redesign colors 
-                "purple": "#B07CC8",
+                "purple": "#896898",
                 "light-purple": "#B06BAE",
                 "dark-pink": "#B1437F",
                 "bg-dark": "#181818",

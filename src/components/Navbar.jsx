@@ -15,13 +15,13 @@ export default function Navbar() {
 
     return (
         <div
-            className={`fixed h-screen ${navExtend? 'w-36' : 'w-12'} bg-black border-r-1 border-white transition-all duration-200 z-50`}
+            className={`fixed h-screen ${navExtend? 'w-36' : 'w-12'} bg-bg-dark border-r border-gray-500 transition-all duration-200 z-50`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             <Link
                 to="#home"
-                className="flex justify-center items-center text-lg h-12 bg-dark-pink overflow-hidden hover:bg-dark-pink-hover transition-all duration-200"
+                className="flex justify-center items-center font-monaco text-lg h-12 bg-gradient-to-br from-purple to-light-purple hover:to-dark-pink transition-all duration-600"
             >
                 {"{"}
                 <span className={`name-slide ${navExtend? 'max-w-none opacity-100' : 'max-w-0 opacity-0 '} transition-all duration-200`}>matteo</span>

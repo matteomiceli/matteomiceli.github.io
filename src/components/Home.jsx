@@ -22,14 +22,14 @@ export default function Home({ mouseMove }) {
             </div>
             <div>
                 <h1
-                    className={`absolute top-1/3  align-middle whitespace-nowrap font-header text-7xl font-bold ${
+                    className={`absolute top-1/3 bg-gradient-to-r from-purple to-dark-pink text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-7xl font-bold ${
                         mouseMove ? "glitch" : ""
                     }`}
                 >
                     Hi, I'm Matteo
                 </h1>
                 <div className="flex subtitle">
-                    <h2 className="text-2xl text-gray-300">full stack web developer</h2>
+                    <h2 className="text-2xl text-gray-300 font-monaco">full stack web developer</h2>
                     <div className="blinker"></div>
                 </div>
                 <div className="flex mt-8">

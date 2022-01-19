@@ -19,7 +19,7 @@ export default function Index() {
     }, [mouseMove]);
 
     return (
-        <div className="">
+        <div className="bg-bg-dark">
             <Navbar />
             <SectionBlock setMouseMove={() => setMouseMove(true)}>
                 <Home mouseMove={mouseMove} />
