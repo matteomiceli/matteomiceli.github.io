@@ -3,9 +3,9 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
-            body: 'Nunito, sans-serif', 
-            header: 'Ubuntu, serif',
-            monaco: 'Monaco, monospace',
+            body: "Nunito, sans-serif",
+            header: "Ubuntu, serif",
+            monaco: "Monaco, monospace",
         },
         extend: {
             colors: {
@@ -14,13 +14,12 @@ module.exports = {
                 "dark-blue": "#00838B",
                 "dark-pink-hover": "#f50087",
 
-                // redesign colors 
-                "purple": "#896898",
+                // redesign colors
+                purple: "#B07CC8",
                 "light-purple": "#B06BAE",
                 "dark-pink": "#B1437F",
                 "bg-dark": "#181818",
                 "dark-grey": "#393939",
-
             },
         },
     },
