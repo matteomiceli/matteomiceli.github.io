@@ -15,9 +15,11 @@ module.exports = {
                 "dark-pink-hover": "#f50087",
 
                 // redesign colors
+                "dark-purple": "#896898",
                 purple: "#B07CC8",
                 "light-purple": "#B06BAE",
                 "dark-pink": "#B1437F",
+                "gradient-end": "#cd316f",
                 "bg-dark": "#181818",
                 "dark-grey": "#393939",
             },
