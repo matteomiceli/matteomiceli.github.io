@@ -25,9 +25,10 @@ export default function Index() {
                 <Home mouseMove={mouseMove} />
             </SectionBlock>
             <About />
-            <SectionBlock>
+            {/* <SectionBlock>
                 <Projects />
-            </SectionBlock>
+            </SectionBlock> */}
+            <div id="projects" className="pt-24"></div>
             {projectList.map((project, i) => {
                 return (
                     <SectionBlock>

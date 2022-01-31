@@ -5,7 +5,7 @@ export default function Project({ project, i }) {
         <div className="pt-8 h-full" id={`project-${i}`}>
             <h2 className="text-neon-blue text-3xl">{`0${i}. ${project.name}`}</h2>
             <div className="flex">
-                <div className="mt-10 w-1/2 text-sm">
+                <div className="mt-10 w-1/2 pr-10">
                     <div className="absolute w-px bg-neon-blue h-3/6"></div>
                     <p className="ml-4 mt-4">
                         <span className="text-neon-blue">Type: </span>

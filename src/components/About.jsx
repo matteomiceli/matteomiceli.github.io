@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import Mountains from "./Mountains";
 
 export default function About() {
     const [stackBTip, setBStackTip] = useState();
     const [stackFTip, setFStackTip] = useState();
-
-
 
     return (
         <div className="pt-8 ml-12 mb-28 h-screen" id="about">
@@ -15,14 +14,14 @@ export default function About() {
                 </h2>
                 <div className="mt-36 grid grid-cols-2 gap-72">
                     <div>
-                        <p className="text-sm">
+                        <p className="">
                             I love to break things apart to see how they work.
                             This has fostered my interest in computers and
                             software development, and it has also driven my
                             interest in research and writing.
                         </p>
                         <br />
-                        <p className="text-sm">
+                        <p className="">
                             I grew up tinkering with computers, building gaming
                             rigs with friends and discovering the world of linux
                             and open source software. Currently I'm studying to
@@ -33,8 +32,8 @@ export default function About() {
                     </div>
                     <div className="">
                         <div className="flex items-center">
-                            <h3 className="text-neon-blue text-2xl">Backend</h3>
-                            <p className="h-full bg-white w-40 ml-8 text-black flex justify-end">{stackBTip}</p>
+                            <h3 className="w-32 text-purple text-2xl">Backend</h3>
+                            <p className="h-full bg-white w-44 text-black flex justify-end">{stackBTip}</p>
                         </div>
                         <div className="flex mt-4">
                             <img src="/icons/nodedotjs.svg" onMouseOver={() => setBStackTip('Node.js')} onMouseOut={() => setBStackTip()} alt="nodejs" />
@@ -44,8 +43,8 @@ export default function About() {
                             <img className="ml-6" onMouseOver={() => setBStackTip('MySQL')} onMouseOut={() => setBStackTip()} src="/icons/mysql.svg" alt="mysql" />
                         </div>
                         <div className="flex mt-12 items-center">
-                            <h3 className="text-neon-blue text-2xl">Frontend</h3>
-                            <p className="h-full bg-white w-36 ml-8 text-black flex justify-end">{stackFTip}</p>
+                            <h3 className="text-purple w-32 text-2xl">Frontend</h3>
+                            <p className="h-full bg-white w-44 text-black flex justify-end">{stackFTip}</p>
                         </div>
                         <div className="flex mt-4">
                             <img src="/icons/react.svg" onMouseOver={() => setFStackTip('React')} onMouseOut={() => setFStackTip()} alt="react js" />
