@@ -25,7 +25,7 @@ export default function Home({ mouseMove }) {
             </div>
             <div>
                 <h1
-                    className={`bg-move bg-scale4 absolute top-1/3 bg-gradient-to-r from-purple via-dark-pink to-gradient-end text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-7xl font-bold`}
+                    className={`bg-move bg-scale2 absolute top-1/3 bg-gradient-to-r from-teal via-blue to-dark-purple text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-7xl font-bold`}
                 >
                     Hi, I'm Matteo
                 </h1>

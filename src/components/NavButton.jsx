@@ -9,7 +9,7 @@ export default function NavButton({ icon, navExtend }) {
             <div
                 className={`h-12 my-3 overflow-hidden flex ${
                     navExtend ? "justify-start" : "justify-start"
-                } items-center hover:bg-purple hover:bg-opacity-20 transition-all duration-200`}
+                } items-center hover:bg-gray-600 hover:bg-opacity-20 transition-all duration-200`}
             >
                 <img
                     className={`w-6 ${navExtend ? "ml-3" : "ml-3"}`}
