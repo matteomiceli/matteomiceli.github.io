@@ -8,8 +8,9 @@ export default function Project({ project, i }) {
                 <div className="mt-10 w-1/2 pr-10">
                     <div className="absolute w-px bg-white h-3/6"></div>
                     <div className="flex">
-                        <p className="ml-8 mt-4">{project.type}</p>
-                        <p className="mt-4">{project.role}</p>
+                        <p className="ml-8 mt-4 text-teal text-lg font-bold">{project.type}</p>
+                        <div className="mx-2 mt-4">|</div>
+                        <p className="mt-4 text-lg font-bold">{project.role}</p>
                     </div>
                     <p className="ml-8 mt-8">{project.longDescription}</p>
                     <div className="ml-8 mt-24 buttons flex">
@@ -42,7 +43,7 @@ export default function Project({ project, i }) {
                         href={project.links.website}
                     >
                         <img
-                            className="w-full rounded-lg"
+                            className="w-full rounded-lg mt-8"
                             src={project.imgPath}
                             alt=""
                         />

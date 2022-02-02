@@ -2,8 +2,8 @@ const projectList = [
     {
         name: 'Runik',
         description: 'Generate custom e-reader dictionaries for your favourite fictional worlds.',
-        type: 'Interdisciplinary Project',
-        role: 'Project Lead, Full Stack Web Developer',
+        type: 'Team Project',
+        role: 'Team Lead, Full Stack Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
             website: 'https://runik.app',
@@ -23,7 +23,7 @@ const projectList = [
         name: 'Int-house',
         description: 'Compete against your friends in custom in house e-sports leagues.',
         type: 'Personal Project',
-        role: 'Full Stack Web Developer',
+        role: 'Full Stack Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
             website: 'https://int-house.herokuapp.com/',
@@ -40,7 +40,7 @@ const projectList = [
     {
         name: 'TEDxSFU',
         description: 'Website for the 2021 TEDxSFU conference.',
-        type: 'Volunteer Project',
+        type: 'Freelance',
         role: 'Frontend Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
@@ -56,7 +56,7 @@ const projectList = [
     {
         name: 'VXP',
         description: "Website for Canada's first design-focused hackathon.",
-        type: 'Volunteer Project',
+        type: 'Freelance',
         role: 'Frontend Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
@@ -72,8 +72,8 @@ const projectList = [
     {
         name: 'Craigslist Redesign',
         description: 'Browse through a registry of items for sale and post your own ads.',
-        type: 'Interdisciplinary Project',
-        role: 'Full Stack Web Developer',
+        type: 'Team Project',
+        role: 'Full Stack Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
             website: 'https://idsp2380-craigslist.herokuapp.com/',
@@ -90,7 +90,7 @@ const projectList = [
     {
         name: 'Nammos',
         description: 'Website for a local restaurant.',
-        type: 'Freelance Work',
+        type: 'Freelance',
         role: 'Frontend Developer',
         longDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         links: {
