@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import StackItem from "./StackItem";
 
 export default function Project({ project, i }) {
+    const [toolTip, setToolTip] = useState();
+
     return (
         <div className="pt-8 h-full" id={`project-${i}`}>
             <h2 className="text-5xl">{`0${i}. ${project.name}`}</h2>
@@ -8,7 +11,9 @@ export default function Project({ project, i }) {
                 <div className="mt-10 w-1/2 pr-10">
                     <div className="absolute w-px bg-white h-3/6"></div>
                     <div className="flex">
-                        <p className="ml-8 mt-4 text-teal text-lg font-bold">{project.type}</p>
+                        <p className="ml-8 mt-4 text-teal text-lg font-bold">
+                            {project.type}
+                        </p>
                         <div className="mx-2 mt-4">|</div>
                         <p className="mt-4 text-lg font-bold">{project.role}</p>
                     </div>
@@ -48,16 +53,29 @@ export default function Project({ project, i }) {
                             alt=""
                         />
                     </a>
-                    <div className="stack flex justify-center">
-                        {project.techStack.map((item) => {
+                    <div className="stack flex justify-center mt-6">
+                        {project.techStack.map((item, i) => {
+                            if (i == 0) {
+                                return (
+                                    <StackItem
+                                        first={true}
+                                        name={item.name}
+                                        imgSrc={`/icons/${item.path}.svg`}
+                                        toolTipState={setToolTip}
+                                    />
+                                );
+                            }
                             return (
-                                <img
-                                    className="mt-8 w-8 mx-4"
-                                    src={`/icons/${item}.svg`}
-                                    alt=""
+                                <StackItem
+                                    name={item.name}
+                                    imgSrc={`/icons/${item.path}.svg`}
+                                    toolTipState={setToolTip}
                                 />
                             );
                         })}
+                    </div>
+                    <div className="text-center w-32 mt-4 rounded-sm bg-white text-bg-dark">
+                        {toolTip}
                     </div>
                 </div>
             </div>

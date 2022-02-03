@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Mountains from "./Mountains";
+import StackItem from "./StackItem";
 
 export default function About() {
     const [stackBTip, setBStackTip] = useState();
     const [stackFTip, setFStackTip] = useState();
 
     return (
-        <div className="pt-8 ml-12 mb-28 h-screen" id="about">
+        <div className="pt-28 ml-12 mb-28 h-screen" id="about">
             <div className="w-5/6 mx-auto">
-                <h2 className="text-white text-3xl font-header font-bold">
-                    {">"} about
+                <h2 className="text-white text-5xl font-body font-semibold">
+                    About
                 </h2>
-                <div className="mt-36 grid grid-cols-2 gap-64">
+                <div className="mt-28 grid grid-cols-2 gap-60">
                     <div>
                         <p className="">
                             I love to break things apart to see how they work.
@@ -33,88 +34,72 @@ export default function About() {
                     <div className="">
                         <div className="flex items-center">
                             <h3 className="w-32 text-teal text-2xl">Backend</h3>
-                            <p className="h-full bg-white w-44 text-black flex justify-end">
+                            <p className="h-full rounded-sm bg-white w-44 pr-2 text-black flex justify-end">
                                 {stackBTip}
                             </p>
                         </div>
                         <div className="flex mt-4">
-                            <img
-                                src="/icons/nodedotjs.svg"
-                                onMouseOver={() => setBStackTip("Node.js")}
-                                onMouseOut={() => setBStackTip()}
-                                alt="nodejs"
+                            <StackItem
+                                first={true}
+                                name="Node.js"
+                                imgSrc="/icons/nodedotjs.svg"
+                                toolTipState={setBStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setBStackTip("Express")}
-                                onMouseOut={() => setBStackTip()}
-                                src="/icons/express.svg"
-                                alt="express"
+                            <StackItem
+                                name="Express"
+                                imgSrc="/icons/express.svg"
+                                toolTipState={setBStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setBStackTip("Flask")}
-                                onMouseOut={() => setBStackTip()}
-                                src="/icons/flask.svg"
-                                alt="flask"
+                            <StackItem
+                                name="Flask"
+                                imgSrc="/icons/flask.svg"
+                                toolTipState={setBStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setBStackTip("MongoDB")}
-                                onMouseOut={() => setBStackTip()}
-                                src="/icons/mongodb.svg"
-                                alt="mongo db"
+                            <StackItem
+                                name="MongoDB"
+                                imgSrc="/icons/mongodb.svg"
+                                toolTipState={setBStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setBStackTip("MySQL")}
-                                onMouseOut={() => setBStackTip()}
-                                src="/icons/mysql.svg"
-                                alt="mysql"
+                            <StackItem
+                                name="MySQL"
+                                imgSrc="/icons/mysql.svg"
+                                toolTipState={setBStackTip}
                             />
                         </div>
                         <div className="flex mt-12 items-center">
                             <h3 className="text-teal w-32 text-2xl">
                                 Frontend
                             </h3>
-                            <p className="h-full bg-white w-44 text-black flex justify-end">
+                            <p className="h-full rounded-sm bg-white w-44 pr-2 text-black flex justify-end">
                                 {stackFTip}
                             </p>
                         </div>
                         <div className="flex mt-4">
-                            <img
-                                src="/icons/react.svg"
-                                onMouseOver={() => setFStackTip("React")}
-                                onMouseOut={() => setFStackTip()}
-                                alt="react js"
+                            <StackItem
+                                first={true}
+                                name="React"
+                                imgSrc="/icons/react.svg"
+                                toolTipState={setFStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setFStackTip("Next.js")}
-                                onMouseOut={() => setFStackTip()}
-                                src="/icons/nextdotjs.svg"
-                                alt="next js"
+                            <StackItem
+                                name="Next.js"
+                                imgSrc="/icons/nextdotjs.svg"
+                                toolTipState={setFStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setFStackTip("Gatsby")}
-                                onMouseOut={() => setFStackTip()}
-                                src="/icons/gatsby.svg"
-                                alt="gatsby"
+                            <StackItem
+                                name="Gatsby"
+                                imgSrc="/icons/gatsby.svg"
+                                toolTipState={setFStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                onMouseOver={() => setFStackTip("Tailwind CSS")}
-                                onMouseOut={() => setFStackTip()}
-                                src="/icons/tailwindcss.svg"
-                                alt="tailwind css"
+                            <StackItem
+                                name="Tailwind CSS"
+                                imgSrc="/icons/tailwindcss.svg"
+                                toolTipState={setFStackTip}
                             />
-                            <img
-                                className="ml-6"
-                                src="/icons/sass.svg"
-                                onMouseOver={() => setFStackTip("Sass")}
-                                onMouseOut={() => setFStackTip()}
-                                alt="saass"
+                            <StackItem
+                                name="Sass"
+                                imgSrc="/icons/sass.svg"
+                                toolTipState={setFStackTip}
                             />
                         </div>
                     </div>
