@@ -10,12 +10,14 @@ export default function Project({ project, i }) {
             <div className="flex">
                 <div className="mt-10 w-1/2 pr-10">
                     <div className="absolute w-px bg-white h-3/6"></div>
-                    <div className="flex">
+                    <div className="flex flex-col xl:flex-row">
                         <p className="ml-8 mt-4 text-teal text-lg font-bold">
                             {project.type}
                         </p>
-                        <div className="mx-2 mt-4">|</div>
-                        <p className="mt-4 text-lg font-bold">{project.role}</p>
+                        <div className="mx-2 mt-4 hidden xl:block">|</div>
+                        <p className="ml-8 xl:ml-0 xl:mt-4 text-lg font-bold">
+                            {project.role}
+                        </p>
                     </div>
                     <p className="ml-8 mt-8">{project.longDescription}</p>
                     <div className="ml-8 mt-24 buttons flex">
@@ -41,41 +43,43 @@ export default function Project({ project, i }) {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-col w-1/2 items-center">
-                    <a
-                        className="mt-2 flex justify w-4/5"
-                        target="_blank"
-                        href={project.links.website}
-                    >
-                        <img
-                            className="w-full rounded-lg mt-8"
-                            src={project.imgPath}
-                            alt=""
-                        />
-                    </a>
-                    <div className="stack flex justify-center mt-6">
-                        {project.techStack.map((item, i) => {
-                            if (i == 0) {
+                <div className="flex flex-col w-1/2 lg:pl-8 items-center">
+                    <div className="flex flex-col items-center ">
+                        <a
+                            className="mt-2 flex w-full justify xl:w-4/5"
+                            target="_blank"
+                            href={project.links.website}
+                        >
+                            <img
+                                className="w-full rounded-lg mt-8"
+                                src={project.imgPath}
+                                alt=""
+                            />
+                        </a>
+                        <div className="stack flex justify-center mt-6">
+                            {project.techStack.map((item, i) => {
+                                if (i == 0) {
+                                    return (
+                                        <StackItem
+                                            first={true}
+                                            name={item.name}
+                                            imgSrc={`/icons/${item.path}.svg`}
+                                            toolTipState={setToolTip}
+                                        />
+                                    );
+                                }
                                 return (
                                     <StackItem
-                                        first={true}
                                         name={item.name}
                                         imgSrc={`/icons/${item.path}.svg`}
                                         toolTipState={setToolTip}
                                     />
                                 );
-                            }
-                            return (
-                                <StackItem
-                                    name={item.name}
-                                    imgSrc={`/icons/${item.path}.svg`}
-                                    toolTipState={setToolTip}
-                                />
-                            );
-                        })}
-                    </div>
-                    <div className="text-center w-32 mt-4 rounded-sm bg-white text-bg-dark">
-                        {toolTip}
+                            })}
+                        </div>
+                        <div className="text-center w-32 mt-4 rounded-sm bg-white text-bg-dark">
+                            {toolTip}
+                        </div>
                     </div>
                 </div>
             </div>

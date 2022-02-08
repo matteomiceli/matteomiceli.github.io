@@ -9,11 +9,11 @@ export default function About() {
 
     return (
         <div className="pt-28 ml-12 mb-28 h-screen" id="about">
-            <div className="w-5/6 mx-auto">
+            <div className="w-11/12 xl:w-5/6 mx-auto">
                 <h2 className="text-white text-5xl font-body font-semibold">
                     About
                 </h2>
-                <div className="mt-28 grid grid-cols-2 gap-60">
+                <div className="mt-20 xl:mt-28 grid grid-cols-2 gap-20 xl:gap-60">
                     <div>
                         <p className="">
                             I love to break things apart to see how they work.
@@ -32,13 +32,13 @@ export default function About() {
                         </p>
                     </div>
                     <div className="">
-                        <div className="flex items-center">
+                        <div className="flex items-center ml-auto w-4/5 xl:w-full">
                             <h3 className="w-32 text-teal text-2xl">Backend</h3>
                             <p className="h-full rounded-sm bg-white w-44 pr-2 text-black flex justify-end">
                                 {stackBTip}
                             </p>
                         </div>
-                        <div className="flex mt-4">
+                        <div className="flex mt-4 w-4/5 ml-auto xl:w-full">
                             <StackItem
                                 first={true}
                                 name="Node.js"
@@ -66,7 +66,7 @@ export default function About() {
                                 toolTipState={setBStackTip}
                             />
                         </div>
-                        <div className="flex mt-12 items-center">
+                        <div className="flex mt-12 items-center w-4/5 ml-auto xl:w-full">
                             <h3 className="text-teal w-32 text-2xl">
                                 Frontend
                             </h3>
@@ -74,7 +74,7 @@ export default function About() {
                                 {stackFTip}
                             </p>
                         </div>
-                        <div className="flex mt-4">
+                        <div className="flex mt-4 ml-auto w-4/5 xl:w-full">
                             <StackItem
                                 first={true}
                                 name="React"
