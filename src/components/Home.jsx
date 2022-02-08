@@ -16,16 +16,16 @@ export default function Home({ mouseMove }) {
             id="home"
             className="flex flex-col justify-center items-center w-full"
         >
-            <div
+            {/* <div
                 onClick={() => triggerLol()}
                 className="absolute top-12 right-12 cursor-pointer w-20"
             >
                 <img src="/icons/sun.svg" alt="light mode" />
                 <p className="absolute text-white">{lol}</p>
-            </div>
+            </div> */}
             <div>
                 <h1
-                    className={`bg-move bg-scale2 absolute top-1/3 bg-gradient-to-r from-teal via-blue to-dark-purple text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-7xl font-bold`}
+                    className={`bg-move bg-scale2 bg-gradient-to-r from-teal via-blue to-dark-purple mb-8 text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-7xl font-bold`}
                 >
                     Hi, I'm Matteo
                 </h1>
