@@ -17,7 +17,7 @@ export default function Navbar() {
         <div
             className={`fixed h-screen ${
                 navExtend ? "w-36" : "w-12"
-            } bg-bg-dark border-r border-gray-500 transition-all duration-200 z-50`}
+            } bg-bg-dark border-r border-gray-500 transition-all duration-200 z-50 hidden lg:block`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
