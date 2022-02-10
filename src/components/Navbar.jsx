@@ -17,7 +17,7 @@ export default function Navbar() {
         <div
             className={`fixed h-screen ${
                 navExtend ? "w-36" : "w-12"
-            } bg-bg-dark border-r border-gray-500 transition-all duration-200 z-50 hidden lg:block`}
+            } bg-bg-dark border-r border-gray-500 transition-all duration-300 z-50 hidden lg:block`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -29,7 +29,7 @@ export default function Navbar() {
                 <span
                     className={`name-slide ${
                         navExtend ? "w-16 opacity-100" : "w-0 opacity-0 "
-                    } overflow-hidden transition-all duration-200`}
+                    } overflow-hidden transition-all duration-300`}
                 >
                     matteo
                 </span>

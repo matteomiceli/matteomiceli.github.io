@@ -32,7 +32,7 @@ export default function Project({ project, i }) {
                             </button>
                         </a>
                         <a target="_blank" href={project.links.github}>
-                            <button className="flex justify-center ml-8 w-32 border-2 border-white p-2 rounded hover:border-gray-300 hover:text-gray-300 transition-all duration-300">
+                            <button className="flex justify-center ml-8 w-32 border-2 border-white p-1.5 rounded hover:bg-white hover:bg-opacity-10 transition-all duration-300">
                                 <img
                                     className="w-4 mr-2"
                                     src="/icons/github.svg"
