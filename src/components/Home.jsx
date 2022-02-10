@@ -33,19 +33,18 @@ export default function Home({ mouseMove }) {
                                 typewriter
                                     .typeString("full stack web developer")
                                     .pauseFor(1200)
-                                    .deleteAll()
-                                    .typeString("")
+                                    .deleteAll(10)
+                                    .typeString("test")
                                     .pauseFor(1200)
-                                    .deleteAll()
+                                    .deleteAll(10)
                                     .typeString("Tailwind CSS evangelist")
                                     .pauseFor(1200)
-                                    .deleteAll()
+                                    .deleteAll(10)
                                     .start();
                             }}
                             options={{
                                 loop: true,
                                 delay: 50,
-                                deleteSpeed: 25,
                                 cursor: "",
                             }}
                         />
