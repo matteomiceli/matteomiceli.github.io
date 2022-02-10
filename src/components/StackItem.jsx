@@ -8,7 +8,7 @@ export default function StackItem({ name, imgSrc, toolTipState, first }) {
             } h-8 hover:opacity-70 lg:h-10 transition-opacity duration-300`}
             src={imgSrc}
             onMouseOver={() => toolTipState(name)}
-            onMouseOut={() => toolTipState()}
+            onMouseOut={() => toolTipState("")}
             alt={name}
         />
     );

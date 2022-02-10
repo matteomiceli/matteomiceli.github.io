@@ -23,7 +23,7 @@ export default function Socials({ mt = 0 }) {
             </a>
             <a
                 target="_blank"
-                className="ml-24"
+                className="ml-24 hover:scale-125"
                 href="mailto:omatteomiceli@gmail.com"
             >
                 <img

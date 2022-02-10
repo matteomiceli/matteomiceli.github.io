@@ -6,21 +6,23 @@ export default function Project({ project, i }) {
 
     return (
         <div className="pt-8 h-full" id={`project-${i}`}>
-            <h2 className="text-5xl">{`0${i}. ${project.name}`}</h2>
+            <h2 className="text-5xl font-header font-semibold">{`${project.name}`}</h2>
             <div className="flex">
                 <div className="mt-10 w-1/2 pr-10">
-                    <div className="absolute w-px bg-white h-3/6"></div>
+                    {/* <div className="absolute w-px bg-white h-3/6"></div> */}
                     <div className="flex flex-col xl:flex-row">
-                        <p className="ml-8 mt-4 text-teal text-lg font-bold">
+                        <p className="mt-4 text-teal text-lg font-bold">
                             {project.type}
                         </p>
                         <div className="mx-2 mt-4 hidden xl:block">|</div>
-                        <p className="ml-8 xl:ml-0 xl:mt-4 text-lg font-bold">
+                        <p className="xl:ml-0 xl:mt-4 text-lg font-bold">
                             {project.role}
                         </p>
                     </div>
-                    <p className="ml-8 mt-8">{project.longDescription}</p>
-                    <div className="ml-8 mt-24 buttons flex">
+                    <p className="mt-8 text-gray-400">
+                        {project.longDescription}
+                    </p>
+                    <div className="mt-24 buttons flex">
                         <a target="_blank" href={project.links.website}>
                             <button className="flex justify-center w-32 bg-gradient-to-br p-2 nav-home bg-scale4 from-blue to-teal rounded transition-all duration-300">
                                 <img

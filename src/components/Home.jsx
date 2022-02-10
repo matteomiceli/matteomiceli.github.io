@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import Socials from "./Socials";
+import Typewriter from "typewriter-effect";
 
 export default function Home({ mouseMove }) {
     const [lol, setLol] = useState();
 
-    function triggerLol() {
-        setLol("lol 😂");
-        setTimeout(() => {
-            setLol();
-        }, 2000);
-    }
+    const testwriter = new Typewriter();
 
     return (
         <div
@@ -31,7 +27,28 @@ export default function Home({ mouseMove }) {
                 </h1>
                 <div className="flex subtitle justify-center lg:justify-start">
                     <h2 className="text-2xl text-gray-300 font-monaco text-left">
-                        full stack web developer
+                        {/* full stack web developer */}
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("full stack web developer")
+                                    .pauseFor(1200)
+                                    .deleteAll()
+                                    .typeString("")
+                                    .pauseFor(1200)
+                                    .deleteAll()
+                                    .typeString("Tailwind CSS evangelist")
+                                    .pauseFor(1200)
+                                    .deleteAll()
+                                    .start();
+                            }}
+                            options={{
+                                loop: true,
+                                delay: 50,
+                                deleteSpeed: 25,
+                                cursor: "",
+                            }}
+                        />
                     </h2>
                     <div className="blinker"></div>
                 </div>

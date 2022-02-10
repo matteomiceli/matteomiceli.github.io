@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Project from "../components/Project";
 import projectList from "../content/projects";
 import Footer from "../components/Footer";
+import Mountains from "../components/Mountains";
 
 export default function Index() {
     const [mouseMove, setMouseMove] = useState(false);
@@ -24,10 +25,8 @@ export default function Index() {
             <SectionBlock setMouseMove={() => setMouseMove(true)}>
                 <Home mouseMove={mouseMove} />
             </SectionBlock>
+            <Mountains />
             <About />
-            {/* <SectionBlock>
-                <Projects />
-            </SectionBlock> */}
             <div id="projects" className="pt-24"></div>
             {projectList.map((project, i) => {
                 return (

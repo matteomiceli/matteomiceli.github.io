@@ -3,18 +3,18 @@ import Mountains from "./Mountains";
 import StackItem from "./StackItem";
 
 export default function About() {
-    const [stackBTip, setBStackTip] = useState();
-    const [stackFTip, setFStackTip] = useState();
+    const [stackBTip, setBStackTip] = useState("");
+    const [stackFTip, setFStackTip] = useState("");
 
     return (
-        <div className="pt-28 mb-32 lg:ml-12 md:mb-40 h-screen" id="about">
+        <div className="pt-28 lg:ml-12 h-screen" id="about">
             <div className="w-5/6 lg:w-11/12 xl:w-5/6 mx-auto">
-                <h2 className="text-white text-5xl font-body font-semibold">
+                <h2 className="text-white text-5xl font-header font-semibold">
                     About
                 </h2>
                 <div className="mt-12 md:mt-16 lg:mt-20 xl:mt-28 grid grid-rows-2 lg:grid-cols-2 gap-20 xl:gap-48">
-                    <div className="bg-gradient-to-br from-teal to-blue p-0.5 rounded-lg lg:p-0 lg:bg-bg-dark">
-                        <div className="bg-bg-dark h-full rounded-lg p-6 lg:p-0 lg:rounded-none">
+                    <div className="bg-gradient-to-br from-teal to-blue p-0.5 rounded-lg lg:p-0 lg:bg-bg-dark mt-2">
+                        <div className="bg-bg-dark h-full rounded-lg p-6 lg:p-0 lg:rounded-none text-gray-400 text-lg">
                             <p className="">
                                 I love to break things apart to see how they
                                 work. This has fostered my interest in computers
@@ -77,7 +77,13 @@ export default function About() {
                                 <h3 className="text-teal w-32 text-2xl">
                                     Frontend
                                 </h3>
-                                <p className="h-full rounded-sm bg-white w-44 pr-2 text-black flex justify-end">
+                                <p
+                                    className={`${
+                                        setFStackTip === ""
+                                            ? "opacity-0"
+                                            : "opcaity-100"
+                                    } transition-all duration-200 h-full rounded-sm bg-white w-44 pr-2 text-black flex justify-end`}
+                                >
                                     {stackFTip}
                                 </p>
                             </div>
@@ -113,7 +119,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <Mountains />
+            {/* <Mountains /> */}
         </div>
     );
 }
