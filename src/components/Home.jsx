@@ -8,7 +8,7 @@ export default function Home({ mouseMove }) {
     return (
         <div
             id="home"
-            className="flex flex-col justify-center items-center w-full"
+            className="h-screen flex flex-col justify-center items-center w-full overflow-hidden"
         >
             {/* <div
                 onClick={() => triggerLol()}
@@ -19,12 +19,12 @@ export default function Home({ mouseMove }) {
             </div> */}
             <div className="flex flex-col items-center lg:items-start">
                 <h1
-                    className={`bg-move bg-scale2 bg-gradient-to-r from-teal via-blue to-dark-purple mb-8 text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-7xl font-bold`}
+                    className={`bg-move bg-scale2 bg-gradient-to-r from-teal via-blue to-dark-purple mb-8 text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-5xl sm:text-7xl font-bold`}
                 >
                     Hi, I'm Matteo
                 </h1>
                 <div className="flex subtitle justify-center lg:justify-start">
-                    <h2 className="text-2xl text-gray-300 font-monaco text-left">
+                    <h2 className="text-xl sm:text-2xl text-gray-300 font-monaco text-left">
                         {/* full stack web developer */}
                         <Typewriter
                             onInit={(typewriter) => {

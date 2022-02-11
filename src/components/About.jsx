@@ -8,7 +8,7 @@ export default function About() {
 
     return (
         <div className="pt-28 lg:ml-12 h-screen" id="about">
-            <div className="w-5/6 lg:w-11/12 xl:w-5/6 mx-auto">
+            <div className="w-5/6 lg:w-11/12 xl:w-5/6 mx-auto max-w-7xl">
                 <h2 className="text-white text-5xl font-header font-semibold">
                     About
                 </h2>

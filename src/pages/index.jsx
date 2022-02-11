@@ -22,9 +22,9 @@ export default function Index() {
     return (
         <div className="bg-bg-dark">
             <Navbar />
-            <SectionBlock setMouseMove={() => setMouseMove(true)}>
-                <Home mouseMove={mouseMove} />
-            </SectionBlock>
+
+            <Home mouseMove={mouseMove} />
+
             <Mountains />
             <About />
             <div id="projects" className="pt-28">

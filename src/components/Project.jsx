@@ -5,10 +5,10 @@ export default function Project({ project, i }) {
     const [toolTip, setToolTip] = useState();
 
     return (
-        <div className="pt-8 h-full" id={`project-${i}`}>
+        <div className="pt-8 h-full my-24 md:my-0" id={`project-${i}`}>
             <h2 className="text-5xl font-header font-semibold">{`${project.name}`}</h2>
             <div className="flex flex-col-reverse items-center md:flex-row">
-                <div className="mt-10 w-1/2 pr-10">
+                <div className="mt-0 md:mt-10 md:w-1/2 pr-10">
                     {/* <div className="absolute w-px bg-white h-3/6"></div> */}
                     <div className="flex flex-col xl:flex-row">
                         <p className="mt-4 text-teal text-lg font-bold">
@@ -45,7 +45,7 @@ export default function Project({ project, i }) {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-col w-1/2 lg:pl-8 items-center">
+                <div className="flex flex-col sm:w-5/6 md:w-1/2 lg:pl-8 items-center">
                     <div className="flex flex-col items-center ">
                         <a
                             className="mt-2 flex w-full justify xl:w-4/5"
@@ -79,7 +79,11 @@ export default function Project({ project, i }) {
                                 );
                             })}
                         </div>
-                        <div className="text-center w-32 mt-4 rounded-sm bg-white text-bg-dark">
+                        <div
+                            className={`text-center w-32 mt-4 h-6 rounded-sm ${
+                                toolTip ? "opacity-100" : "opacity-0"
+                            } bg-white text-bg-dark `}
+                        >
                             {toolTip}
                         </div>
                     </div>
