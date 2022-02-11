@@ -27,14 +27,15 @@ export default function Index() {
             </SectionBlock>
             <Mountains />
             <About />
-            <div id="projects" className="pt-24"></div>
-            {projectList.map((project, i) => {
-                return (
-                    <SectionBlock>
-                        <Project project={project} i={i} />
-                    </SectionBlock>
-                );
-            })}
+            <div id="projects" className="pt-28">
+                {projectList.map((project, i) => {
+                    return (
+                        <SectionBlock>
+                            <Project project={project} i={i} />
+                        </SectionBlock>
+                    );
+                })}
+            </div>
             <Footer />
         </div>
     );

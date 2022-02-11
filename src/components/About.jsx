@@ -33,7 +33,7 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-around lg:block">
+                    <div className="md:flex justify-around lg:block">
                         <div>
                             <div className="flex items-center lg:ml-auto w-4/5 xl:w-full">
                                 <h3 className="w-32 text-teal text-2xl">
@@ -72,7 +72,7 @@ export default function About() {
                                 />
                             </div>
                         </div>
-                        <div className="lg:mt-12">
+                        <div className="mt-12 md:mt-0 lg:mt-12">
                             <div className="flex lg:p-2 items-center w-4/5 lg:ml-auto xl:w-full">
                                 <h3 className="text-teal w-32 text-2xl">
                                     Frontend

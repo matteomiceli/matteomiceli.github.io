@@ -7,7 +7,7 @@ export default function Project({ project, i }) {
     return (
         <div className="pt-8 h-full" id={`project-${i}`}>
             <h2 className="text-5xl font-header font-semibold">{`${project.name}`}</h2>
-            <div className="flex">
+            <div className="flex flex-col-reverse items-center md:flex-row">
                 <div className="mt-10 w-1/2 pr-10">
                     {/* <div className="absolute w-px bg-white h-3/6"></div> */}
                     <div className="flex flex-col xl:flex-row">

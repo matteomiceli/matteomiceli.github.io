@@ -5,8 +5,6 @@ import Typewriter from "typewriter-effect";
 export default function Home({ mouseMove }) {
     const [lol, setLol] = useState();
 
-    const testwriter = new Typewriter();
-
     return (
         <div
             id="home"
