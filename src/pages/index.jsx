@@ -27,7 +27,7 @@ export default function Index() {
 
             <Mountains />
             <About />
-            <div id="projects" className="pt-28">
+            <div id="projects">
                 {projectList.map((project, i) => {
                     return (
                         <SectionBlock>

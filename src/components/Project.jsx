@@ -8,7 +8,7 @@ export default function Project({ project, i }) {
         <div className="pt-8 h-full my-24 md:my-0" id={`project-${i}`}>
             <h2 className="text-5xl font-header font-semibold">{`${project.name}`}</h2>
             <div className="flex flex-col-reverse items-center md:flex-row">
-                <div className="mt-0 md:mt-10 md:w-1/2 pr-10">
+                <div className="sm:w-5/6 mt-0 md:mt-10 md:w-1/2 md:pr-10">
                     {/* <div className="absolute w-px bg-white h-3/6"></div> */}
                     <div className="flex flex-col xl:flex-row">
                         <p className="mt-4 text-teal text-lg font-bold">
@@ -53,7 +53,7 @@ export default function Project({ project, i }) {
                             href={project.links.website}
                         >
                             <img
-                                className="w-full rounded-lg mt-8"
+                                className="sm:w-full rounded-lg mt-8"
                                 src={project.imgPath}
                                 alt=""
                             />

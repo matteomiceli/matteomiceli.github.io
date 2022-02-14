@@ -7,7 +7,7 @@ export default function About() {
     const [stackFTip, setFStackTip] = useState("");
 
     return (
-        <div className="pt-28 lg:ml-12 h-screen" id="about">
+        <div className="pt-28 lg:ml-12 min-h-screen" id="about">
             <div className="w-5/6 lg:w-11/12 xl:w-5/6 mx-auto max-w-7xl">
                 <h2 className="text-white text-5xl font-header font-semibold">
                     About
