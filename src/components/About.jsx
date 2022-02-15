@@ -12,7 +12,7 @@ export default function About() {
                 <h2 className="text-white text-5xl font-header font-semibold">
                     About
                 </h2>
-                <div className="mt-12 md:mt-16 lg:mt-20 xl:mt-28 grid grid-rows-2 lg:grid-cols-2 gap-20 xl:gap-48">
+                <div className="mt-12 md:mt-16 lg:mt-20 xl:mt-28 lg:grid lg:grid-cols-2 gap-20 xl:gap-48">
                     <div className="bg-gradient-to-br from-teal to-blue p-0.5 rounded-lg lg:p-0 lg:bg-bg-dark mt-2">
                         <div className="bg-bg-dark h-full rounded-lg p-6 lg:p-0 lg:rounded-none text-gray-400 text-lg">
                             <p className="">
@@ -33,7 +33,7 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="md:flex justify-around lg:block">
+                    <div className="mt-16 lg:my-0 md:flex justify-around lg:block">
                         <div>
                             <div className="flex items-center lg:ml-auto w-4/5 xl:w-full">
                                 <h3 className="w-32 text-teal text-2xl">
