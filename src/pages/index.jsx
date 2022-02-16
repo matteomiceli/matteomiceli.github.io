@@ -27,15 +27,16 @@ export default function Index() {
 
             <Mountains />
             <About />
-            <div id="projects">
-                {projectList.map((project, i) => {
-                    return (
-                        <SectionBlock>
-                            <Project project={project} i={i} />
-                        </SectionBlock>
-                    );
-                })}
-            </div>
+            <SectionBlock>
+                <Projects />
+            </SectionBlock>
+            {projectList.map((project, i) => {
+                return (
+                    <SectionBlock>
+                        <Project project={project} i={i} />
+                    </SectionBlock>
+                );
+            })}
             <Footer />
         </div>
     );

@@ -12,6 +12,8 @@ const projectList = [
             github: "https://github.com/Runik-3",
         },
         imgPath: "/images/runik.png",
+        logo: "/logos/runik.svg",
+        color: '#f6f6f6',
         techStack: [
             { name: "Next.js", path: "nextdotjs" },
             { name: "Tailwind CSS", path: "tailwindcss" },
@@ -34,6 +36,8 @@ const projectList = [
             github: "https://github.com/matteomiceli/inhouse_O_clock",
         },
         imgPath: "/images/inthouse.png",
+        logo: "/logos/inthouse.png",
+        color: '#2583FF',
         techStack: [
             { name: "Node.js", path: "nodedotjs" },
             { name: "Tailwind CSS", path: "tailwindcss" },
@@ -53,6 +57,8 @@ const projectList = [
             github: "https://github.com/matteomiceli/tedxsfu",
         },
         imgPath: "/images/tedx.png",
+        logo: "/logos/tedx.webp",
+        color: '#000',
         techStack: [
             { name: "Gatsby", path: "gatsby" },
             { name: "Tailwind CSS", path: "tailwindcss" },
@@ -70,6 +76,8 @@ const projectList = [
             github: "https://github.com/VentureXPerience/vxp-server",
         },
         imgPath: "/images/vxp.png",
+        logo: "/logos/vxp.svg",
+        color: '#282b56',
         techStack: [
             { name: "Next.js", path: "nextdotjs" },
             { name: "Tailwind CSS", path: "tailwindcss" },
@@ -88,6 +96,8 @@ const projectList = [
             github: "https://github.com/khs6226/craigslist_redesign",
         },
         imgPath: "/images/craigslist.png",
+        logo: "/logos/craigslist.svg",
+        color: '#fff',
         techStack: [
             { name: "Node.js", path: "nodedotjs" },
             { name: "Sass", path: "sass" },
@@ -95,24 +105,25 @@ const projectList = [
             { name: "MySQL", path: "mysql" },
         ],
     },
-    {
-        name: "Nammos",
-        description: "Website for a local restaurant.",
-        type: "Freelance",
-        role: "Frontend Developer",
-        longDescription:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        links: {
-            website: "https://nammos.ca/",
-            github: "https://github.com/matteomiceli/nammos",
-        },
-        imgPath: "/images/nammos.png",
-        techStack: [
-            { name: "jQuery", path: "jquery" },
-            { name: "HTML", path: "html5" },
-            { name: "CSS", path: "css3" },
-        ],
-    },
+    // {
+    //     name: "Nammos",
+    //     description: "Website for a local restaurant.",
+    //     type: "Freelance",
+    //     role: "Frontend Developer",
+    //     longDescription:
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //     links: {
+    //         website: "https://nammos.ca/",
+    //         github: "https://github.com/matteomiceli/nammos",
+    //     },
+    //     imgPath: "/images/nammos.png",
+    //     logo: "/logos/nammos.png",
+    //     techStack: [
+    //         { name: "jQuery", path: "jquery" },
+    //         { name: "HTML", path: "html5" },
+    //         { name: "CSS", path: "css3" },
+    //     ],
+    // },
 ];
 
 export default projectList;

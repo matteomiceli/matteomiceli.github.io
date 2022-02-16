@@ -3,24 +3,32 @@ import projectList from "../content/projects";
 
 export default function Projects() {
     return (
-        <div className="h-screen w-full">
+        <div className="pt-8 my-24 w-full">
             <h2
                 id="projects"
-                className="text-white text-3xl font-header font-bold pt-8"
+                className="text-white text-5xl font-header font-bold pt-8"
             >
-                {">"} projects
+                Projects
             </h2>
-            <div className="mt-28 flex flex-wrap justify-around">
+            <div className="mt-12 md:mt-16 grid sm:grid-cols-2">
                 {projectList.map((proj, i) => {
                     return (
-                        <a className="mx-1 my-8 w-2/6" href={`#project-${i}`}>
-                            <div className="border-1 hover:border-gray-300 p-4">
-                                <h3 className="text-neon-blue text-2xl">
-                                    0{i}. {proj.name}
-                                </h3>
-                                <p>{proj.description}</p>
-                            </div>
-                        </a>
+                        <div className="flex flex-grow items-center hover:scale-105 transition-all duration-200">
+                            <a
+                                className={`mx-4 my-4 w-full h-24 md:h-32 lg:h-36 rounded-lg flex items-center justify-center`}
+                                style={{ backgroundColor: proj.color }}
+                                href={`#project-${i}`}
+                            >
+                                <img
+                                    className="h-12 w-full object-contain"
+                                    src={proj.logo}
+                                    alt={proj.name}
+                                />
+                            </a>
+                            {/* <h3 className="text-neon-blue text-2xl">
+                                {proj.name}
+                            </h3> */}
+                        </div>
                     );
                 })}
             </div>
