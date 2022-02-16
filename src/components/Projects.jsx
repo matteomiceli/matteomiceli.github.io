@@ -3,7 +3,7 @@ import projectList from "../content/projects";
 
 export default function Projects() {
     return (
-        <div className="pt-8 my-24 w-full">
+        <div className="pt-28 my-24 w-full">
             <h2
                 id="projects"
                 className="text-white text-5xl font-header font-bold pt-8"
