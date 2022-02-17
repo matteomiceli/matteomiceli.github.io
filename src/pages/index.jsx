@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import Navbar from "../components/Navbar";
 import SectionBlock from "../components/SectionBlock";
@@ -9,30 +9,42 @@ import Project from "../components/Project";
 import projectList from "../content/projects";
 import Footer from "../components/Footer";
 import Mountains from "../components/Mountains";
+import Menu from "../components/Menu";
+import useIsHome from "../hooks/useIsHome";
 
 export default function Index() {
-    const [mouseMove, setMouseMove] = useState(false);
+    const [navExtend, setNavExtend] = useState(false);
+    const isHome = useIsHome();
 
-    useEffect(() => {
-        setTimeout(() => {
-            setMouseMove(false);
-        }, 500);
-    }, [mouseMove]);
+    function handleMouseEnter() {
+        setNavExtend(true);
+    }
+    function handleMouseLeave() {
+        setNavExtend(false);
+    }
 
+    if (typeof window === `undefined`) {
+        return <></>;
+    }
     return (
         <div className="bg-bg-dark">
-            <Navbar />
-
-            <Home mouseMove={mouseMove} />
-
+            <Menu isHome={isHome} />
+            <Navbar
+                navExtend={navExtend}
+                setNavExtend={setNavExtend}
+                handleMouseEnter={handleMouseEnter}
+                handleMouseLeave={handleMouseLeave}
+            />
+            <Home />
             <Mountains />
             <About />
             <SectionBlock>
                 <Projects />
             </SectionBlock>
+            <div className="mt-32"></div>
             {projectList.map((project, i) => {
                 return (
-                    <SectionBlock>
+                    <SectionBlock key={project.name}>
                         <Project project={project} i={i} />
                     </SectionBlock>
                 );

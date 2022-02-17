@@ -63,6 +63,7 @@ export default function Project({ project, i }) {
                                 if (i == 0) {
                                     return (
                                         <StackItem
+                                            key={item.name}
                                             first={true}
                                             name={item.name}
                                             imgSrc={`/icons/${item.path}.svg`}
@@ -72,6 +73,7 @@ export default function Project({ project, i }) {
                                 }
                                 return (
                                     <StackItem
+                                        key={item.name}
                                         name={item.name}
                                         imgSrc={`/icons/${item.path}.svg`}
                                         toolTipState={setToolTip}

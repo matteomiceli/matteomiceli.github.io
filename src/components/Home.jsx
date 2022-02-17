@@ -10,13 +10,6 @@ export default function Home({ mouseMove }) {
             id="home"
             className="h-screen flex flex-col justify-center items-center w-full overflow-hidden"
         >
-            {/* <div
-                onClick={() => triggerLol()}
-                className="absolute top-12 right-12 cursor-pointer w-20"
-            >
-                <img src="/icons/sun.svg" alt="light mode" />
-                <p className="absolute text-white">{lol}</p>
-            </div> */}
             <div className="flex flex-col items-center lg:items-start">
                 <h1
                     className={`bg-move bg-scale2 bg-gradient-to-r from-teal via-blue to-dark-purple mb-8 text-transparent bg-clip-text align-middle whitespace-nowrap font-header text-5xl sm:text-7xl font-bold`}

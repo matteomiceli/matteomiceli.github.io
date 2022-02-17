@@ -3,17 +3,20 @@ import projectList from "../content/projects";
 
 export default function Projects() {
     return (
-        <div className="pt-28 my-24 w-full">
+        <div className="my-24 w-full">
             <h2
                 id="projects"
-                className="text-white text-5xl font-header font-bold pt-8"
+                className="text-white text-5xl font-header font-bold pt-28"
             >
                 Projects
             </h2>
             <div className="mt-12 md:mt-16 grid sm:grid-cols-2">
                 {projectList.map((proj, i) => {
                     return (
-                        <div className="flex flex-grow items-center hover:scale-105 transition-all duration-200">
+                        <div
+                            key={proj.name}
+                            className="flex flex-grow items-center hover:scale-105 transition-all duration-200"
+                        >
                             <a
                                 className={`mx-4 my-4 w-full h-24 md:h-32 lg:h-36 rounded-lg flex items-center justify-center`}
                                 style={{ backgroundColor: proj.color }}

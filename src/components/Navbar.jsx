@@ -2,22 +2,19 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import { navIcons } from "../content/navIcons";
 import NavButton from "./NavButton";
+import Menu from "./Menu";
 
-export default function Navbar() {
-    const [navExtend, setNavExtend] = useState(false);
-
-    function handleMouseEnter() {
-        setNavExtend(true);
-    }
-    function handleMouseLeave() {
-        setNavExtend(false);
-    }
-
+export default function Navbar({
+    navExtend,
+    setNavExtend,
+    handleMouseEnter,
+    handleMouseLeave,
+}) {
     return (
         <div
             className={`fixed h-screen ${
                 navExtend ? "w-36" : "w-12"
-            } bg-bg-dark border-r border-gray-500 transition-all duration-300 z-50 hidden lg:block`}
+            } bg-bg-dark border-r border-gray-500 transition-all duration-300 z-50 -translate-x-12 lg:translate-x-0`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -37,7 +34,13 @@ export default function Navbar() {
             </Link>
 
             {navIcons.map((icon) => {
-                return <NavButton icon={icon} navExtend={navExtend} />;
+                return (
+                    <NavButton
+                        key={icon.name}
+                        icon={icon}
+                        navExtend={navExtend}
+                    />
+                );
             })}
         </div>
     );
