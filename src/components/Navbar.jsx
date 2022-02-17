@@ -12,9 +12,9 @@ export default function Navbar({
 }) {
     return (
         <div
-            className={`fixed h-screen ${
-                navExtend ? "w-36" : "w-12"
-            } bg-bg-dark border-r border-gray-500 transition-all duration-300 z-50 -translate-x-12 lg:translate-x-0`}
+            className={`flex flex-col  lg:block fixed h-screen bg-bg-dark border-r border-gray-500 transition-all duration-300 z-40 -translate-x-12 lg:translate-x-0 ${
+                navExtend ? "w-5/6 lg:w-36" : "w-12"
+            }  ${navExtend ? "translate-x-0" : ""} `}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

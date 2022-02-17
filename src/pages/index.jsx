@@ -23,12 +23,13 @@ export default function Index() {
         setNavExtend(false);
     }
 
-    if (typeof window === `undefined`) {
-        return <></>;
-    }
     return (
         <div className="bg-bg-dark">
-            <Menu isHome={isHome} />
+            <Menu
+                isHome={isHome}
+                navExtend={navExtend}
+                setNavExtend={setNavExtend}
+            />
             <Navbar
                 navExtend={navExtend}
                 setNavExtend={setNavExtend}

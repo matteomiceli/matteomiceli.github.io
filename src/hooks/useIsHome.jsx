@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function useScreenMetrics() {
     const [isHome, setIsHome] = useState(true);
     const [screenWidth, setScreenWidth] = useState();
-    const [screenHeight, setScreenHeight] = useState();
+    const [screenHeight, setScreenHeight] = useState(window.innerHeight);
     const [posX, setPosX] = useState();
     const [posY, setPosY] = useState();
     const [pageWidth, setPageWidth] = useState();
@@ -11,12 +11,16 @@ export default function useScreenMetrics() {
 
     useEffect(() => {
         if (window) {
-            const { innerWidth, innerHeight } = window;
+            const { innerWidth, innerHeight, scrollY } = window;
             const { clientHeight, clientWidth } = document.body;
             setScreenHeight(innerHeight);
             setScreenWidth(innerWidth);
             setPageHeight(clientHeight);
             setPageWidth(clientWidth);
+
+            if (scrollY > screenHeight / 2) {
+                setIsHome(false);
+            }
 
             window.addEventListener("resize", (e) => {
                 const { innerWidth, innerHeight } = window;
@@ -28,12 +32,14 @@ export default function useScreenMetrics() {
             });
 
             window.addEventListener("scroll", (e) => {
-                const { scrollX, scrollY } = window;
-                if (scrollY > screenHeight / 2) {
-                    setIsHome(false);
-                } else {
-                    setIsHome(true);
-                }
+                const { scrollY } = window;
+                setTimeout(() => {
+                    if (Math.round(scrollY) >= screenHeight / 2) {
+                        setIsHome(false);
+                    } else {
+                        setIsHome(true);
+                    }
+                }, 10);
             });
 
             return () => {
