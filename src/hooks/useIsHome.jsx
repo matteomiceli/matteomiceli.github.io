@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 export default function useScreenMetrics() {
     const [isHome, setIsHome] = useState(true);
     const [screenWidth, setScreenWidth] = useState();
-    const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+    const [screenHeight, setScreenHeight] = useState(
+        typeof window !== "undefined" ? window.innerHeight : ""
+    );
     const [posX, setPosX] = useState();
     const [posY, setPosY] = useState();
     const [pageWidth, setPageWidth] = useState();
