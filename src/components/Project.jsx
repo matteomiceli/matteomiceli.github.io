@@ -48,7 +48,7 @@ export default function Project({ project, i }) {
                 <div className="flex flex-col sm:w-5/6 md:w-1/2 lg:pl-8 items-center">
                     <div className="flex flex-col items-center ">
                         <a
-                            className="mt-2 flex w-full justify xl:w-4/5"
+                            className="mt-2 flex w-full justify xl:w-4/5 opacity-80 hover:opacity-100 transition-all duration-200"
                             target="_blank"
                             href={project.links.website}
                         >

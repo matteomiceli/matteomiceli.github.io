@@ -13,20 +13,22 @@ export default function Navbar({
     return (
         <div
             className={`flex flex-col  lg:block fixed h-screen bg-bg-dark border-r border-gray-500 transition-all duration-300 z-40 -translate-x-12 lg:translate-x-0 ${
-                navExtend ? "w-5/6 lg:w-36" : "w-12"
+                navExtend ? "w-full lg:w-36" : "w-12"
             }  ${navExtend ? "translate-x-0" : ""} `}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             <Link
                 to="#home"
-                className="bg-scale2 nav-home overflow-hidden flex justify-center items-center font-monaco text-lg h-12 bg-gradient-to-br from-teal via-blue to-dark-purple transition-all duration-300"
+                className="bg-scale2 nav-home overflow-hidden flex justify-center items-center font-monaco text-xl lg:text-lg h-16 lg:h-12 bg-gradient-to-br from-teal via-blue to-dark-purple transition-all duration-300"
                 onClick={() => setNavExtend(false)}
             >
                 {"{"}
                 <span
                     className={`name-slide ${
-                        navExtend ? "w-16 opacity-100" : "w-0 opacity-0 "
+                        navExtend
+                            ? "w-20 lg:w-16 opacity-100"
+                            : "w-0 opacity-0 "
                     } overflow-hidden transition-all duration-300`}
                 >
                     matteo
