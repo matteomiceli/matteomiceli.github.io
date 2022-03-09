@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function NavButton({ icon, navExtend }) {
+export default function NavButton({ icon, navExtend, setNavExtend }) {
     return (
         <a
             target={icon.path ? "_blank" : ""}
             href={`${icon.path ? icon.path : `#${icon.name}`}`}
+            onClick={() => setNavExtend(false)}
         >
             <div
                 className={`h-12 my-3 overflow-hidden flex ${

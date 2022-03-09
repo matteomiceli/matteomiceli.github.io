@@ -21,6 +21,7 @@ export default function Navbar({
             <Link
                 to="#home"
                 className="bg-scale2 nav-home overflow-hidden flex justify-center items-center font-monaco text-lg h-12 bg-gradient-to-br from-teal via-blue to-dark-purple transition-all duration-300"
+                onClick={() => setNavExtend(false)}
             >
                 {"{"}
                 <span
@@ -39,6 +40,7 @@ export default function Navbar({
                         key={icon.name}
                         icon={icon}
                         navExtend={navExtend}
+                        setNavExtend={setNavExtend}
                     />
                 );
             })}
