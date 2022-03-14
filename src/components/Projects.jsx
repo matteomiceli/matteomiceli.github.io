@@ -15,7 +15,7 @@ export default function Projects() {
                     return (
                         <div
                             key={proj.name}
-                            className="flex flex-grow items-center hover:scale-105 transition-all duration-200"
+                            className="flex flex-grow items-center opacity-80 hover:opacity-100 transition-all duration-200"
                         >
                             <a
                                 className={`mx-4 my-4 w-full h-24 md:h-32 lg:h-36 rounded-lg flex items-center justify-center`}
