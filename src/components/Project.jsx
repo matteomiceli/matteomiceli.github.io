@@ -5,7 +5,7 @@ export default function Project({ project, i }) {
     const [toolTip, setToolTip] = useState();
 
     return (
-        <div className="pt-8 h-full my-24 md:my-0" id={`project-${i}`}>
+        <div className="pt-16 h-full my-24 md:my-0" id={`project-${i}`}>
             <h2 className="text-5xl font-header font-semibold">{`${project.name}`}</h2>
             <div className="flex flex-col-reverse items-center md:flex-row">
                 <div className="sm:w-5/6 mt-0 md:mt-10 md:w-1/2 md:pr-10">
