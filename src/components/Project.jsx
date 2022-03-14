@@ -5,7 +5,7 @@ export default function Project({ project, i }) {
     const [toolTip, setToolTip] = useState();
 
     return (
-        <div className="pt-16 h-full my-24 md:my-0" id={`project-${i}`}>
+        <div className="pt-24 h-full my-24 md:my-0" id={`project-${i}`}>
             <h2 className="text-5xl font-header font-semibold">{`${project.name}`}</h2>
             <div className="flex flex-col-reverse items-center md:flex-row">
                 <div className="sm:w-5/6 mt-0 md:mt-10 md:w-1/2 md:pr-10">
@@ -24,7 +24,7 @@ export default function Project({ project, i }) {
                     </p>
                     <div className="mt-24 buttons flex">
                         <a target="_blank" href={project.links.website}>
-                            <button className="flex justify-center items-center w-32 bg-gradient-to-br p-2 nav-home bg-scale4 from-blue to-teal rounded transition-all duration-300">
+                            <button className="flex justify-center font-semibold items-center w-32 bg-gradient-to-br p-2 nav-home bg-scale4 from-blue to-teal rounded transition-all duration-300 text-bg-dark">
                                 <img
                                     className="w-4 mr-2"
                                     src="/icons/web.svg"
