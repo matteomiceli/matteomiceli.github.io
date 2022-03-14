@@ -25,10 +25,10 @@ export default function Home({ mouseMove }) {
                                     .typeString("full stack web developer")
                                     .pauseFor(1000)
                                     .deleteAll(10)
-                                    .typeString("test")
+                                    .typeString("tailwind css evangelist")
                                     .pauseFor(1000)
                                     .deleteAll(10)
-                                    .typeString("Tailwind CSS evangelist")
+                                    .typeString("okay-ish starcraft player")
                                     .pauseFor(1000)
                                     .deleteAll(10)
                                     .start();
