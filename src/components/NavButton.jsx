@@ -8,19 +8,19 @@ export default function NavButton({ icon, navExtend, setNavExtend }) {
             onClick={() => setNavExtend(false)}
         >
             <div
-                className={`h-12 my-3 overflow-hidden flex ${
-                    navExtend ? "justify-start" : "justify-start"
-                } items-center hover:bg-gray-600 hover:bg-opacity-20 transition-all duration-200`}
+                className={`h-12 my-16 lg:my-3 overflow-hidden flex items-center justify-center lg:justify-start lg:hover:bg-gray-600 lg:hover:bg-opacity-20 transition-all duration-200`}
             >
                 <img
-                    className={`w-6 ${navExtend ? "ml-3" : "ml-3"}`}
+                    className={`hidden lg:block w-6 ${
+                        navExtend ? "ml-3" : "ml-3"
+                    }`}
                     src={icon.url}
                     alt={icon.name}
                 />
                 <p
                     className={`${
                         navExtend ? "ml-2" : "max-w-0 opacity-0"
-                    } text-lg transition-all duration-300`}
+                    } lg:text-lg transition-all duration-300 text-2xl`}
                 >
                     {icon.name}
                 </p>
