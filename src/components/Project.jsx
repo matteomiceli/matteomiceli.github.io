@@ -19,9 +19,11 @@ export default function Project({ project, i }) {
                             {project.role}
                         </p>
                     </div>
-                    <p className="mt-8 text-gray-400">
-                        {project.longDescription}
-                    </p>
+                    <div className="mt-8 text-gray-400">
+                        {project.longDescription.map((p) => {
+                            return <p className="mt-4">{p}</p>;
+                        })}
+                    </div>
                     <div className="mt-24 buttons flex">
                         <a target="_blank" href={project.links.website}>
                             <button className="flex justify-center font-semibold items-center w-32 bg-gradient-to-br p-2 nav-home bg-scale4 from-blue to-teal rounded transition-all duration-300 text-bg-dark">
