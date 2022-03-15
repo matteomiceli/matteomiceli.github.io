@@ -11,7 +11,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
     "gatsby": "^4.2.0",
@@ -23,6 +24,7 @@
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2"
+    "autoprefixer": "^10.4.2",
+    "gh-pages": "^3.2.3"
   }
 }
